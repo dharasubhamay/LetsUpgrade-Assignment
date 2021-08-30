@@ -53,7 +53,7 @@ app.post("/createlang", (req, res) => {
     let langObj = new languageModel(lang);
 
     langObj.save((err, data) => {
-        if(err == null)
+        if(err === null)
         {
             res.send({message: "Language Created"});
         }
